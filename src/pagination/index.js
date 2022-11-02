@@ -8,7 +8,7 @@ const pagesToDisplay = 5,
 function Pagination() {
   const [pages, setPages] = useState([]);
   const [page, setPage] = useState();
-  const [apiDAta, setApiDAta] = useState([]);
+  // const [apiDAta, setApiDAta] = useState([]);
 
   const buildPagination = (pageIndex) => {
     setPage(pageIndex);
@@ -56,7 +56,7 @@ function Pagination() {
         className="material-symbol-outlined"
         type="button"
       >
-        <h1></h1>
+        &larr;
       </button>
       {pages.map((p) => (
         <button
@@ -74,7 +74,7 @@ function Pagination() {
         onClick={() => buildPagination(pageCount - 1)}
         type="button"
       >
-        last_page
+        &rarr;
       </button>
       {/* {apiDAta.length === 0 ? (
         <h1>Loading.... </h1>

@@ -1,6 +1,9 @@
 .pagination {
     display: flex;
     gap: 4px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20%
 }
 
 .pagination>button {

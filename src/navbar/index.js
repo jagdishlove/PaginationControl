@@ -1,9 +1,11 @@
-import React from 'react'
-
+import React from "react";
+import "./index.css";
 function index() {
   return (
-    <div>Navbar</div>
-  )
+    <div className="navbar">
+      <h1>Controlled Pagination</h1>
+    </div>
+  );
 }
 
-export default index
+export default index;
